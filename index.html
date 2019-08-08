@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- jQueryUI CSS -->
+  <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- side pane -->
+<div class="sidepane col-sm-2 col-md-2 col-lg-2">
+  <!-- Form -->
+  <div class="form">
+    <h3>Form</h3>
+    <!-- Upload File Field -->
+    <input type="file" class="form-control" placeholder="Upload Your Images" name="upload" onchange="readURL(this);">
+  </div>
+  <hr />
+  <!-- Text and Img Assets -->
+  <div class="assets">
+    <h3>Assets</h3>
+    <!-- To Add Text -->
+    <div class="text">
+        <h4>Text</h4>
+        <input type="text" placeholder="Your text here">
+        <button id="addText" class="btn btn-default">Add Text</button>
+    </div>
+    <!-- Uploaded Images Show here -->
+    <div class="image">
+        <h4>Images</h4>
+        <ul class="list-unstyled">
+            <!-- List of images here -->
+            <!-- Added in using JS -->
+        </ul>
+    </div>
+  </div>
+</div>
+<!-- canvas -->
+
+<div class="canvas col-sm-8 col-md-8 col-lg-8">
+    <div id="containerDiv" class="block">
+        <!-- Add images and texts to here -->
+        <!-- Manually Entered Text for DEMO -->
+        <div id="draggableDiv3" class="divClass">
+            <h1 class="user_text">Hello</h1>
+        </div>
+        <!-- Images added using JS -->
+    </div>
+</div>
+
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<!-- jQueryUI -->
+<script
+  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous"></script>
+<!-- script.js -->
+<script type="text/javascript" src="script.js"></script>
+<!-- jQuery fittext for text resize -->
+<script type="text/javascript" src="jquery.fittext.js"></script>
+</body>
+</html>
